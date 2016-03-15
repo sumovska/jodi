@@ -1,0 +1,9 @@
+[01-Mar-2016 08:30:57 UTC] PHP Fatal error:  Call to undefined function language_attributes() in /home/startmesh/public_html/wp-content/themes/mobius/header.php on line 2
+[01-Mar-2016 08:30:58 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/startmesh/public_html/wp-content/themes/mobius/functions.php on line 7
+[01-Mar-2016 08:30:58 UTC] PHP Fatal error:  Call to undefined function get_queried_object_id() in /home/startmesh/public_html/wp-content/themes/mobius/footer.php on line 7
+[01-Mar-2016 08:31:03 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/startmesh/public_html/wp-content/themes/mobius/archive.php on line 1
+[01-Mar-2016 08:31:03 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/startmesh/public_html/wp-content/themes/mobius/404.php on line 1
+[01-Mar-2016 08:31:04 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/startmesh/public_html/wp-content/themes/mobius/404.php on line 1
+[14-Mar-2016 08:12:46 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/startmesh/public_html/wp-content/themes/mobius/functions.php on line 7
+[14-Mar-2016 08:12:46 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/startmesh/public_html/wp-content/themes/mobius/404.php on line 1
+[14-Mar-2016 08:12:46 UTC] PHP Fatal error:  Call to undefined function get_queried_object_id() in /home/startmesh/public_html/wp-content/themes/mobius/footer.php on line 7
