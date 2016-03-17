@@ -1,0 +1,137 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url('../images/gravel_colour.jpg');
+	font-family:arial,verdana,sans-serif;
+	 }
+
+html{margin: 0;padding: 0;}
+
+#container{
+	width:850px;
+	margin: auto;
+	padding:0;
+	background-color:#FFC;
+	padding-bottom: 20px;
+}
+#header {
+    width:850px;
+	height: auto;
+   	background-color: #FFFFCC;
+}
+
+#banner {
+    width:850px;
+	height:200px;
+  	background-color: #FFC;
+
+}
+
+#nav{
+	width:850px;
+   	background-color: #FFC;
+	
+}
+
+#content {
+	color: #000000;
+	width: 830px;
+	text-align: justify;
+	background-color: #FFFFCC;
+	padding: 10px;
+
+
+	}
+
+#content img {
+	padding: 15px;
+              }
+
+.style1 {
+	text-align: justify;
+	color: #000000;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 5;
+	font-weight: normal;
+}
+
+.style2 {
+	text-align: justify;
+	color: #000000;
+	font-size: 12px;
+	text-decoration: none;
+	padding: 5;
+	font-weight: normal;
+}
+
+	
+h1 {
+	text-align: left;
+	color: #CC9900;
+	font-size: 24px;
+	font-weight: bold;
+	}
+	
+h2 {
+	text-align: left;
+	color: #CC9900;
+	font-size: 18px;
+	font-weight: bold;
+	}
+.style4 {
+	text-align: center;
+	color: #663300;
+	font-size: 16px;
+	font-style: italic;
+	}
+
+#footer {
+	font-size: 11px;
+	width: 850px;
+	background: #e47f02;
+	text-align: center;
+	padding: 1em 0 0.5em 0;
+	margin: 0.5em 0 0 0;
+	color: #FFFFFF;
+	float: right;
+}
+#footer a{
+	font-size: 17px;
+	padding-left: 15px;
+	color: #FFC;
+}
+
+#footer a:hover {color: #000000;}
+
+#footer p {color: #FFFFFF;}
+
+
+
+#sitemap {
+    float: left;
+    margin-left: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #FFFFFF;
+	text-align: left;}
+	
+#sitemap a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 10px;
+}
+	
+#siteby {
+    float: right,relative;
+    margin-right: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #FFFFFF;
+	text-align: right;
+}
+#siteby a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 10px;
+}
