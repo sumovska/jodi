@@ -217,3 +217,105 @@ strong {
 	padding-bottom: 0px;
 	padding-left: 10px;
 }
+
+
+/*** Form Contact ***/
+.form-contact {
+	background: #bca880 url('../images/envelope.jpg') center center no-repeat;
+	background-size: 100% 100%;
+	box-sizing: border-box;
+}
+.form-contact fieldset {
+	padding: 14px;
+	margin: 0;
+	border: none;
+}
+.form-contact fieldset:after {
+	display: table;
+	content: '\0020';
+	clear: both;
+}
+.form-contact .heading {
+	margin: 0;
+	text-align: center;
+	font-size: 22px;
+	line-height: normal;
+	font-weight: bold;
+}
+.form-contact .sub-heading {
+	margin: -2px 0 28px;
+	font-size: 10px;
+	line-height: 10px;
+	text-align: center;
+}
+.form-contact .fn {
+	width: 82px;
+	margin: 0 0 12px;
+	text-align: right;
+	font-size: 12px;
+	line-height: normal;
+}
+.form-contact .form-group {
+	margin-bottom: 16px;
+	display: flex;
+	flex-flow: wrap row;
+}
+.form-contact .form-group:last-of-type {
+	margin-bottom: 0;
+}
+.form-contact .form-group .form-label {
+	margin-right: 14px;
+	flex-basis: 84px;
+	font-weight: bold;
+	text-align: right;
+}
+.form-contact .form-group input, .form-contact .form-group textarea {
+	padding: 3px;
+	margin: 0;
+	border: none;
+	font-size: 13px;
+	line-height: 14px;
+	box-sizing: border-box;
+}
+.form-contact .form-group input:focus, .form-contact .form-group textarea:focus {
+	outline: none;
+}
+.form-contact .form-group input {
+	height: 20px;
+	flex-grow: 1;
+}
+.form-contact .form-group textarea {
+	height: 146px;
+	flex-basis: 100%;
+}
+.form-contact .form-group-text {
+	margin-top: -6px;
+}
+.form-contact .form-group-text .form-label {
+	margin-bottom: 4px;
+	text-align: left;
+	line-height: 20px;
+}
+.form-contact .form-submit {
+	margin-top: 5px;
+	text-align: right;
+}
+.form-contact .button {
+	min-width: 100px;
+	text-transform: uppercase;
+	border-radius: 0;
+	border: 1px solid #ccc;
+	background: #fff;
+	letter-spacing: .04em;
+	cursor: pointer;
+	transition: background-color .2s ease;
+}
+.form-contact .button:hover {
+	background-color: #eee;
+}
+.form-contact .button:focus {
+	outline: none;
+}
+.form-contact .g-recaptcha {
+
+}
