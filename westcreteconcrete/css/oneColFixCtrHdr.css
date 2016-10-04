@@ -1,0 +1,219 @@
+@charset "utf-8";
+body {
+	margin: 0;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding-top: 20;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 20;
+	background-color: #5A8CC5;
+	background-image: url(../images/bkground.jpg);
+}
+.oneColFixCtrHdr #container {
+	width: 847px;
+	text-align: justify; /* this overrides the text-align: center on the body element. */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+}
+.oneColFixCtrHdr #header {
+	padding: 0;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	margin: 0px;
+}
+.oneColFixCtrHdr #nav{
+	margin: 0px;
+	background-color: #5A8CC5;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+
+.oneColFixCtrHdr #mainContent {
+	background-color: #FFC;
+	text-align: justify;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000;
+}
+.oneColFixCtrHdr #footer {
+	padding: 0;
+	background-color: #5A8CC5;
+}
+a:link {
+	color: #06C;
+	text-decoration: none;
+}
+a:visited {
+	color: #06C;
+	text-decoration: none;
+}
+a:hover {
+	color: #F60;
+	text-decoration: none;
+}
+a:active {
+	color: #F60;
+	text-decoration: none;
+}
+img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+.menu_selected {
+	color: #F90;
+}
+.quote {
+	font-style: italic;
+	color: #006;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+#sitemap {
+	float: left;
+	margin-left: 125px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #999;
+	text-align: left;
+	width: 100px;
+}
+	
+#sitemap a:hover {
+	color: #FF0;
+	text-decoration: none;
+	font-size: 10px;
+}
+#sitemap a {
+	color: #CCC;
+	text-decoration: none;
+	font-size: 10px;
+}	
+#siteby {
+	float: right;
+	margin-right: 130px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #999;
+	text-align: right;
+	width: 450px;
+}
+
+#siteby a:hover {
+	color: #FF0;
+	text-decoration: none;
+	font-size: 10px;
+}
+
+#siteby a {
+	color: #CCC;
+	text-decoration: none;
+	font-size: 10px;
+}
+h1 {
+	color: #5A8CC5;
+	font-size: 24px;
+}
+h2 {
+	font-size: 18px;
+	color: #5A8CC5;
+	text-align: left;
+}
+h3 {
+	font-size: 16px;
+	color: #5A8CC5;
+	text-align: left;
+}
+.red {
+	color: #F00;
+	text-align: center;
+}
+.biglink {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFF;
+}
+.imgleft {
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+}
+.imgserv {
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+.imgabout {
+	padding-top: 30px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+.imgdrive {
+	padding-top: 30px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+.oneColFixCtrHdr #container #mainContent p {
+}
+
+
+
+.imghome {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+.imgslab {
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+.imgcolour {
+	padding-top: 15px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+
+strong {
+	font-weight: normal;
+}
+.bold {
+	font-weight: bold;
+}
+.imgsten1 {
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.imgsten2 {
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+}
