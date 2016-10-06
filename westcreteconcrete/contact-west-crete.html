@@ -14,11 +14,11 @@
 	<meta name="author" content="Gerard Haley - Heffernan Webdesigns"/>
 	<title>WEST-CRETE Concrete | Western Sydney | Domestic and Commercial concreting</title>
 	<link href="css/oneColFixCtrHdr.css" rel="stylesheet" type="text/css"/>
-	<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 	<script src="Scripts/template.js" type="text/javascript"></script>
-	<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+	<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 	<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css"/>
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="Scripts/form.js" type="text/javascript"></script>
 </head>
 <body class="oneColFixCtrHdr" onload="MM_preloadImages('images/footer/concreting-sydney_f2.jpg')">
 	<div id="container">
@@ -57,42 +57,8 @@
 					<a href="mailto:&#098;&#046;&#104;&#097;&#114;&#114;&#105;&#115;&#064;&#098;&#105;&#103;&#112;&#111;&#110;&#100;&#046;&#110;&#101;&#116;&#046;&#097;&#117;">&#098;&#046;&#104;&#097;&#114;&#114;&#105;&#115;&#064;&#098;&#105;&#103;&#112;&#111;&#110;&#100;&#046;&#110;&#101;&#116;&#046;&#097;&#117;</a>
 				</h3></td>
 			</tr>
-			<tr>
+			<!-- tr>
 				<td colspan="3">
-					<form class="form-contact" action="mailer.php" method="post">
-						<fieldset>
-							<p class="heading">Send a Message!</p>
-							<p class="sub-heading">Your IP address is recorded on send!</p>
-							<p class="fn"><small><span class="red">*</span> Required</small></p>
-							<div class="form-group">
-								<label class="form-label" for="name">Name:<span class="red">*</span></label>
-								<input class="input-name required" id="name" name="name" type="text" value="" >
-							</div>
-							<div class="form-group">
-								<label class="form-label" for="phone">Phone:<span class="red">*</span></label>
-								<input class="input-phone required" id="phone" name="phone" type="text" value="">
-							</div>
-							<div class="form-group">
-								<label class="form-label" for="email">Email:<span class="red">*</span></label>
-								<input class="input-email required" id="email" name="email" type="text" value="">
-							</div>
-							<div class="form-group">
-								<label class="form-label" for="subject">Subject:<span class="red">*</span></label>
-								<input class="input-subject required" id="subject" name="subject" type="text" value="">
-							</div>
-							<div class="form-group form-group-text">
-								<label class="form-label" for="message">Message:<span class="red">*</span></label>
-								<textarea class="input-message required" id="message" name="message"></textarea>
-							</div>
-							<div class="form-group">
-								<div class="g-recaptcha" data-sitekey="your_site_key"></div>
-							</div>
-							<div class="form-submit">
-								<button class="button" type="submit">Send Mail</button>
-							</div>
-						</fieldset>
-					</form>
-
 					<object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="400" height="450">
 						<param name="movie" value="form.swf"/>
 						<param name="quality" value="high"/>
@@ -118,8 +84,48 @@
 						<!--<![endif]-->
 					</object>
 				</td>
-			</tr>
+			</tr -->
 			</table>
+
+			<form class="form-contact" action="mailer.php" method="post">
+				<fieldset>
+					<p class="heading">Send a Message!</p>
+					<p class="sub-heading">Your IP address is recorded on send!</p>
+					<p class="fn"><small><span class="red">*</span> Required</small></p>
+					<div class="form-group">
+						<label class="form-label" for="name">Name:<span class="red">*</span></label>
+						<input class="name required" id="name" name="name" type="text" maxlength="50" value="">
+					</div>
+					<div class="form-group">
+						<label class="form-label" for="phone">Phone:<span class="red">*</span></label>
+						<input class="phone required" id="phone" name="phone" type="text" maxlength="50" value="">
+					</div>
+					<div class="form-group">
+						<label class="form-label" for="email">Email:<span class="red">*</span></label>
+						<input class="email required" id="email" name="email" type="text" maxlength="50" value="">
+					</div>
+					<div class="form-group">
+						<label class="form-label" for="subject">Subject:<span class="red">*</span></label>
+						<input class="subject required" id="subject" name="subject" type="text" maxlength="50" value="">
+					</div>
+					<div class="form-group form-group-text">
+						<label class="form-label" for="message">Message:<span class="red">*</span></label>
+						<textarea cols="10" rows="4" class="message required" id="message" name="message"></textarea>
+					</div>
+					<div class="form-group">
+						<div class="g-recaptcha" data-sitekey="your_site_key"></div>
+					</div>
+					<div class="form-submit">
+						<button class="button" type="submit">Send Mail</button>
+					</div>
+				</fieldset>
+				<div class="sending">
+					<p>Sending message&hellip;</p>
+				</div>
+				<div class="sent">
+					<p>Message Sent.<br> Thank you!</p>
+				</div>
+			</form>
 			<!-- end #mainContent -->
 		</div>
 		<div id="footer">
@@ -129,19 +135,18 @@
 		<div id="sitemap"><a href="sitemap.html" target="_parent">:: Site Map ::</a></div>
 		<div id="siteby"><a href="http://www.heffernanwebdesigns.com.au/website-design-and-website-redesign.htm" target="_blank">Website Design</a> and <a href="http://www.heffernanwebdesigns.com.au/seo-search-engine-optimisation.htm" target="_blank">Search Engine Optimisation</a> by
 			<a href="http://www.heffernanwebdesigns.com.au" target="_blank">Heffernan Webdesigns</a></div>
-		<!-- end #container --></div>
+		<!-- end #container -->
+	</div>
+
 	<script type="text/javascript">
 		<!--
 		var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown: "SpryAssets/SpryMenuBarDownHover.gif", imgRight: "SpryAssets/SpryMenuBarRightHover.gif"});
-		swfobject.registerObject("FlashID");
 		//-->
 	</script>
 	<script type="text/javascript">
-
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-12879237-40']);
 		_gaq.push(['_trackPageview']);
-
 		(function () {
 			var ga = document.createElement('script');
 			ga.type = 'text/javascript';
@@ -150,7 +155,6 @@
 			var s = document.getElementsByTagName('script')[0];
 			s.parentNode.insertBefore(ga, s);
 		})();
-
 	</script>
 </body>
 </html>

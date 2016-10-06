@@ -209,6 +209,9 @@ strong {
 }
 /*** Form Contact ***/
 .form-contact {
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
     background: #bca880 url('../images/envelope.jpg') center center no-repeat;
     background-size: 100% 100%;
     box-sizing: border-box;
@@ -245,6 +248,7 @@ strong {
 .form-contact .form-group {
     margin-bottom: 16px;
     display: flex;
+    position: relative;
     flex-flow: wrap row;
 }
 .form-contact .form-group:last-of-type {
@@ -257,12 +261,15 @@ strong {
     text-align: right;
 }
 .form-contact .form-group input, .form-contact .form-group textarea {
-    padding: 3px;
+    padding: 2px;
     margin: 0;
-    border: none;
+    border: 1px solid transparent;
     font-size: 13px;
     line-height: 14px;
     box-sizing: border-box;
+}
+.form-contact .form-group input.error, .form-contact .form-group textarea.error {
+    border-color: red;
 }
 .form-contact .form-group input:focus, .form-contact .form-group textarea:focus {
     outline: none;
@@ -282,6 +289,17 @@ strong {
     margin-bottom: 4px;
     text-align: left;
     line-height: 20px;
+}
+.form-contact .form-error {
+    padding: 4px 30px;
+    display: block;
+    font-size: 11px;
+    color: white;
+    background: red;
+    position: absolute;
+    left: 50px;
+    bottom: 14px;
+    text-transform: uppercase;
 }
 .form-contact .form-submit {
     margin-top: 5px;
@@ -303,5 +321,73 @@ strong {
 .form-contact .button:focus {
     outline: none;
 }
-.form-contact .g-recaptcha {
+.form-contact .sending {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background: #ffc;
+    cursor: default;
+}
+.form-contact .sending p {
+    height: 30px;
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.form-contact-sending .sending {
+    display: block;
+}
+.form-contact .sent {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background: #bca880;
+    cursor: default;
+}
+.form-contact-sent .sent {
+    display: block;
+}
+.form-contact .sent p {
+    max-width: 250px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+}
+.form-contact .sent:before {
+    width: 75px;
+    height: 56px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    content: '';
+    display: block;
+    z-index: 5;
+    background: #bca880 url('../images/mark.jpg') center center no-repeat;
+    background-size: contain;
 }

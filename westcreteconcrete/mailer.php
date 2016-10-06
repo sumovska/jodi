@@ -10,11 +10,11 @@ so make sure your email (on last line of this file) is one hosted on same server
 
 
 // read the variables form the string, (this is not needed with some servers).
-$name = $_REQUEST["name"];
-$phone = $_REQUEST["phone"];
-$email = $_REQUEST["email"];
-$subject = $_REQUEST["subject"];
-$message = $_REQUEST["message"];
+$name = $_POST["name"];
+$phone = $_POST["phone"];
+$email = $_POST["email"];
+$subject = $_POST["subject"];
+$message = $_POST["message"];
 
 
 // include sender IP in the message.
@@ -37,12 +37,12 @@ Senders IP Address - $ip \n
 Name - $name \n
 Phone - $phone \n
 Email - $email \n
-Message - $message  "; 
-
+Message - $message  ";
 
 
 // send the email, make sure you replace email@yourserver.com with your email address
 
-	mail("b.harris@bigpond.net.au", $subject, $details);
+//mail("b.harris@bigpond.net.au", $subject, $details);
+mail("m1ron.com@gmail.com", $subject, $details);
 
 ?>
