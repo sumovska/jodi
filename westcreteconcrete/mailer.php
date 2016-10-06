@@ -42,7 +42,6 @@ Message - $message  ";
 
 // send the email, make sure you replace email@yourserver.com with your email address
 
-//mail("b.harris@bigpond.net.au", $subject, $details);
-mail("m1ron.com@gmail.com", $subject, $details);
+mail("b.harris@bigpond.net.au", $subject, $details);
 
 ?>

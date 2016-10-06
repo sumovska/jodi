@@ -37,7 +37,8 @@ $(document).ready(function () {
 
     /** Errors array */
     var errors = {
-        blank: 'Enter required fields' // This field can't be blank
+        blank: 'Enter required fields', // This field can't be blank
+        captcha: 'Please check the Captcha'
     };
 
     $.fn.validate = function () {
@@ -75,6 +76,15 @@ $(document).ready(function () {
         });
         if (!valid) {
             _this.showMessage(errors.blank);
+        }
+
+        if (valid) {
+            if (grecaptcha.getResponse().length == 0) {
+                valid = false;
+            }
+            if (!valid) {
+                _this.showMessage(errors.captcha);
+            }
         }
 
         /** Focusing on errorous field */
