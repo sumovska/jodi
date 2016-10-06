@@ -7,7 +7,7 @@ $(document).ready(function () {
                 'name': $('[name=name]').val(),
                 'phone': $('[name=phone]').val(),
                 'email': $('[name=email]').val(),
-                'subject': $('[name=subject]').val(),
+                'suburb': $('[name=suburb]').val(),
                 'message': $('[name=message]').val()
             };
 

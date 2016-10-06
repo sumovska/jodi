@@ -13,7 +13,7 @@ so make sure your email (on last line of this file) is one hosted on same server
 $name = $_POST["name"];
 $phone = $_POST["phone"];
 $email = $_POST["email"];
-$subject = $_POST["subject"];
+$suburb = $_POST["suburb"];
 $message = $_POST["message"];
 
 
@@ -25,10 +25,10 @@ $ip = $_SERVER['REMOTE_ADDR'];
 $name = stripslashes($name);
 $phone = stripslashes($phone);
 $email = stripslashes($email);
-$subject = stripslashes($subject);
+$suburb = stripslashes($suburb);
 $message = stripslashes($message);
 
-$subject = "$subject - A message via West-Crete Concrete's website!";
+$subject = "A message via West-Crete Concrete's website!";
 // add a prefix in the subject line so that you know the email was sent by online form
 
 
@@ -37,6 +37,7 @@ Senders IP Address - $ip \n
 Name - $name \n
 Phone - $phone \n
 Email - $email \n
+Suburb - $suburb \n
 Message - $message  ";
 
 
