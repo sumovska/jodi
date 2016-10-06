@@ -59,36 +59,36 @@
 			</tr>
 			<tr>
 				<td colspan="3">
-					<form class="form-contact" action="#" method="post">
+					<form class="form-contact" action="mailer.php" method="post">
 						<fieldset>
 							<p class="heading">Send a Message!</p>
 							<p class="sub-heading">Your IP address is recorded on send!</p>
-							<p class="fn">* Required</p>
+							<p class="fn"><small><span class="red">*</span> Required</small></p>
 							<div class="form-group">
-								<label class="form-label" for="name">* Name:</label>
-								<input id="name" type="text" value="">
+								<label class="form-label" for="name">Name:<span class="red">*</span></label>
+								<input class="input-name required" id="name" name="name" type="text" value="" >
 							</div>
 							<div class="form-group">
-								<label class="form-label" for="tel">* Phone:</label>
-								<input id="tel" type="tel" value="">
+								<label class="form-label" for="phone">Phone:<span class="red">*</span></label>
+								<input class="input-phone required" id="phone" name="phone" type="text" value="">
 							</div>
 							<div class="form-group">
-								<label class="form-label" for="email">Email:</label>
-								<input id="email" type="text" value="">
+								<label class="form-label" for="email">Email:<span class="red">*</span></label>
+								<input class="input-email required" id="email" name="email" type="text" value="">
 							</div>
 							<div class="form-group">
-								<label class="form-label" for="subject">Subject:</label>
-								<input id="subject" type="text" value="">
+								<label class="form-label" for="subject">Subject:<span class="red">*</span></label>
+								<input class="input-subject required" id="subject" name="subject" type="text" value="">
 							</div>
 							<div class="form-group form-group-text">
-								<label class="form-label" for="message">Message:</label>
-								<textarea id="message"></textarea>
+								<label class="form-label" for="message">Message:<span class="red">*</span></label>
+								<textarea class="input-message required" id="message" name="message"></textarea>
 							</div>
 							<div class="form-group">
 								<div class="g-recaptcha" data-sitekey="your_site_key"></div>
 							</div>
 							<div class="form-submit">
-								<button class="button" type="submit">send mail</button>
+								<button class="button" type="submit">Send Mail</button>
 							</div>
 						</fieldset>
 					</form>

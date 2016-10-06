@@ -1,321 +1,307 @@
 @charset "utf-8";
 body {
-	margin: 0;
-	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	padding-top: 20;
-	padding-right: 0;
-	padding-bottom: 0;
-	padding-left: 20;
-	background-color: #5A8CC5;
-	background-image: url(../images/bkground.jpg);
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
+    background-color: #5a8cc5;
+    background-image: url('../images/bkground.jpg');
 }
 .oneColFixCtrHdr #container {
-	width: 847px;
-	text-align: justify; /* this overrides the text-align: center on the body element. */
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	margin-top: 0;
-	margin-right: auto;
-	margin-bottom: 0;
-	margin-left: auto;
-	padding-top: 20px;
-	padding-right: 0px;
-	padding-bottom: 20px;
-	padding-left: 0px;
+    width: 847px;
+    text-align: justify; /* this overrides the text-align: center on the body element. */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-left: 0;
 }
 .oneColFixCtrHdr #header {
-	padding: 0;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
-	margin: 0px;
+    padding: 0; /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+    margin: 0;
 }
-.oneColFixCtrHdr #nav{
-	margin: 0px;
-	background-color: #5A8CC5;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 20px;
+.oneColFixCtrHdr #nav {
+    margin: 0;
+    background-color: #5a8cc5;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
 }
-
 .oneColFixCtrHdr #mainContent {
-	background-color: #FFC;
-	text-align: justify;
-	padding-top: 5px;
-	padding-right: 20px;
-	padding-bottom: 20px;
-	padding-left: 20px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	color: #000;
+    background-color: #ffc;
+    text-align: justify;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #000;
 }
 .oneColFixCtrHdr #footer {
-	padding: 0;
-	background-color: #5A8CC5;
+    padding: 0;
+    background-color: #5a8cc5;
 }
 a:link {
-	color: #06C;
-	text-decoration: none;
+    color: #06c;
+    text-decoration: none;
 }
 a:visited {
-	color: #06C;
-	text-decoration: none;
+    color: #06c;
+    text-decoration: none;
 }
 a:hover {
-	color: #F60;
-	text-decoration: none;
+    color: #f60;
+    text-decoration: none;
 }
 a:active {
-	color: #F60;
-	text-decoration: none;
+    color: #f60;
+    text-decoration: none;
 }
 img {
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
 }
-
 .menu_selected {
-	color: #F90;
+    color: #f90;
 }
 .quote {
-	font-style: italic;
-	color: #006;
-	font-family: Arial, Helvetica, sans-serif;
-	text-align: left;
+    font-style: italic;
+    color: #006;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
 }
 #sitemap {
-	float: left;
-	margin-left: 125px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	color: #999;
-	text-align: left;
-	width: 100px;
+    float: left;
+    margin-left: 125px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #999;
+    text-align: left;
+    width: 100px;
 }
-	
 #sitemap a:hover {
-	color: #FF0;
-	text-decoration: none;
-	font-size: 10px;
+    color: #ff0;
+    text-decoration: none;
+    font-size: 10px;
 }
 #sitemap a {
-	color: #CCC;
-	text-decoration: none;
-	font-size: 10px;
-}	
+    color: #ccc;
+    text-decoration: none;
+    font-size: 10px;
+}
 #siteby {
-	float: right;
-	margin-right: 130px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	color: #999;
-	text-align: right;
-	width: 450px;
+    float: right;
+    margin-right: 130px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #999;
+    text-align: right;
+    width: 450px;
 }
-
 #siteby a:hover {
-	color: #FF0;
-	text-decoration: none;
-	font-size: 10px;
+    color: #ff0;
+    text-decoration: none;
+    font-size: 10px;
 }
-
 #siteby a {
-	color: #CCC;
-	text-decoration: none;
-	font-size: 10px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 10px;
 }
 h1 {
-	color: #5A8CC5;
-	font-size: 24px;
+    color: #5a8cc5;
+    font-size: 24px;
 }
 h2 {
-	font-size: 18px;
-	color: #5A8CC5;
-	text-align: left;
+    font-size: 18px;
+    color: #5a8cc5;
+    text-align: left;
 }
 h3 {
-	font-size: 16px;
-	color: #5A8CC5;
-	text-align: left;
+    font-size: 16px;
+    color: #5a8cc5;
+    text-align: left;
 }
 .red {
-	color: #F00;
-	text-align: center;
+    color: #f00;
+    text-align: center;
 }
 .biglink {
-	font-family: "Comic Sans MS", cursive;
-	font-size: 18px;
-	font-weight: bold;
-	color: #FFF;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
 }
 .imgleft {
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 0px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
 }
 .imgserv {
-	padding-top: 20px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
 }
 .imgabout {
-	padding-top: 30px;
-	padding-right: 0px;
-	padding-bottom: 20px;
-	padding-left: 20px;
+    padding-top: 30px;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 .imgdrive {
-	padding-top: 30px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 20px;
+    padding-top: 30px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
 }
 .oneColFixCtrHdr #container #mainContent p {
 }
-
-
-
 .imghome {
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 20px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
 }
 .imgslab {
-	padding-top: 20px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
 }
 .imgcolour {
-	padding-top: 15px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
 }
-
 strong {
-	font-weight: normal;
+    font-weight: normal;
 }
 .bold {
-	font-weight: bold;
+    font-weight: bold;
 }
 .imgsten1 {
-	padding-top: 40px;
-	padding-right: 40px;
-	padding-bottom: 0px;
-	padding-left: 0px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 0;
+    padding-left: 0;
 }
-
 .imgsten2 {
-	padding-top: 20px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
 }
-
-
 /*** Form Contact ***/
 .form-contact {
-	background: #bca880 url('../images/envelope.jpg') center center no-repeat;
-	background-size: 100% 100%;
-	box-sizing: border-box;
+    background: #bca880 url('../images/envelope.jpg') center center no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
 }
 .form-contact fieldset {
-	padding: 14px;
-	margin: 0;
-	border: none;
+    padding: 14px;
+    margin: 0;
+    border: none;
 }
 .form-contact fieldset:after {
-	display: table;
-	content: '\0020';
-	clear: both;
+    display: table;
+    content: '\0020';
+    clear: both;
 }
 .form-contact .heading {
-	margin: 0;
-	text-align: center;
-	font-size: 22px;
-	line-height: normal;
-	font-weight: bold;
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+    line-height: normal;
+    font-weight: bold;
 }
 .form-contact .sub-heading {
-	margin: -2px 0 28px;
-	font-size: 10px;
-	line-height: 10px;
-	text-align: center;
+    margin: -2px 0 28px;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
 }
 .form-contact .fn {
-	width: 82px;
-	margin: 0 0 12px;
-	text-align: right;
-	font-size: 12px;
-	line-height: normal;
+    margin: 0 0 12px;
+    text-align: right;
+    font-size: 12px;
+    line-height: normal;
 }
 .form-contact .form-group {
-	margin-bottom: 16px;
-	display: flex;
-	flex-flow: wrap row;
+    margin-bottom: 16px;
+    display: flex;
+    flex-flow: wrap row;
 }
 .form-contact .form-group:last-of-type {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 .form-contact .form-group .form-label {
-	margin-right: 14px;
-	flex-basis: 84px;
-	font-weight: bold;
-	text-align: right;
+    margin-right: 14px;
+    flex-basis: 84px;
+    font-weight: bold;
+    text-align: right;
 }
 .form-contact .form-group input, .form-contact .form-group textarea {
-	padding: 3px;
-	margin: 0;
-	border: none;
-	font-size: 13px;
-	line-height: 14px;
-	box-sizing: border-box;
+    padding: 3px;
+    margin: 0;
+    border: none;
+    font-size: 13px;
+    line-height: 14px;
+    box-sizing: border-box;
 }
 .form-contact .form-group input:focus, .form-contact .form-group textarea:focus {
-	outline: none;
+    outline: none;
 }
 .form-contact .form-group input {
-	height: 20px;
-	flex-grow: 1;
+    height: 20px;
+    flex-grow: 1;
 }
 .form-contact .form-group textarea {
-	height: 146px;
-	flex-basis: 100%;
+    height: 146px;
+    flex-basis: 100%;
 }
 .form-contact .form-group-text {
-	margin-top: -6px;
+    margin-top: -6px;
 }
 .form-contact .form-group-text .form-label {
-	margin-bottom: 4px;
-	text-align: left;
-	line-height: 20px;
+    margin-bottom: 4px;
+    text-align: left;
+    line-height: 20px;
 }
 .form-contact .form-submit {
-	margin-top: 5px;
-	text-align: right;
+    margin-top: 5px;
+    text-align: right;
 }
 .form-contact .button {
-	min-width: 100px;
-	text-transform: uppercase;
-	border-radius: 0;
-	border: 1px solid #ccc;
-	background: #fff;
-	letter-spacing: .04em;
-	cursor: pointer;
-	transition: background-color .2s ease;
+    min-width: 100px;
+    text-transform: uppercase;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    background: #fff;
+    letter-spacing: .04em;
+    cursor: pointer;
+    transition: background-color .2s ease;
 }
 .form-contact .button:hover {
-	background-color: #eee;
+    background-color: #eee;
 }
 .form-contact .button:focus {
-	outline: none;
+    outline: none;
 }
 .form-contact .g-recaptcha {
-
 }
