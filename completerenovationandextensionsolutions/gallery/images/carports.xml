@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gallery>
+ 
+   <album title="Gallery" description="" lgpath="lg/" tnpath="lg/tn/">
+  
+    <img src="43.jpg" tn="43.jpg"/>
+    <img src="44.jpg" tn="44.jpg"/>
+	<img src="45.jpg" tn="45.jpg"/>
+	<img src="46.jpg" tn="46.jpg"/>
+	<img src="47.jpg" tn="47.jpg"/>
+    <img src="48.jpg" tn="48.jpg"/>
+	<img src="21.jpg" tn="21.jpg"/>
+    <img src="22.jpg" tn="22.jpg"/>
+    <img src="23.jpg" tn="23.jpg"/>
+    <img src="1.jpg" tn="1.jpg"/>
+	<img src="2.jpg" tn="2.jpg"/>
+	<img src="3.jpg" tn="3.jpg"/>
+	<img src="4.jpg" tn="4.jpg"/>
+	<img src="5.jpg" tn="5.jpg"/>
+	<img src="6.jpg" tn="6.jpg"/>	
+	<img src="7.jpg" tn="7.jpg"/>	
+	<img src="8.jpg" tn="8.jpg"/>
+	<img src="9.jpg" tn="9.jpg"/>	
+	<img src="10.jpg" tn="10.jpg"/>
+	<img src="11.jpg" tn="11.jpg"/>	
+	<img src="12.jpg" tn="12.jpg"/>
+	<img src="13.jpg" tn="13.jpg"/>
+	<img src="14.jpg" tn="14.jpg"/>
+	<img src="15.jpg" tn="15.jpg"/>
+	<img src="16.jpg" tn="16.jpg"/>	
+	<img src="17.jpg" tn="17.jpg"/>	
+	<img src="18.jpg" tn="18.jpg"/>	
+	<img src="19.jpg" tn="19.jpg"/>		
+	<img src="20.jpg" tn="20.jpg"/>	
+	<img src="21.jpg" tn="21.jpg"/>	
+	<img src="22.jpg" tn="22.jpg"/>
+	<img src="23.jpg" tn="23.jpg"/>
+	<img src="24.jpg" tn="24.jpg"/>
+	<img src="25.jpg" tn="25.jpg"/>
+	<img src="26.jpg" tn="26.jpg"/>	
+	<img src="27.jpg" tn="27.jpg"/>	
+	<img src="28.jpg" tn="28.jpg"/>	
+	<img src="29.jpg" tn="29.jpg"/>		
+	<img src="30.jpg" tn="30.jpg"/>		
+	<img src="31.jpg" tn="31.jpg"/>	
+	<img src="32.jpg" tn="32.jpg"/>
+	<img src="33.jpg" tn="33.jpg"/>
+	<img src="34.jpg" tn="34.jpg"/>
+	<img src="35.jpg" tn="35.jpg"/>
+	<img src="36.jpg" tn="36.jpg"/>	
+	<img src="37.jpg" tn="37.jpg"/>	
+	<img src="38.jpg" tn="38.jpg"/>	
+	<img src="39.jpg" tn="39.jpg"/>		
+	<img src="40.jpg" tn="40.jpg"/>		
+	<img src="41.jpg" tn="41.jpg"/>	
+	<img src="42.jpg" tn="42.jpg"/>
+		
+	</album>
+
+</gallery>
