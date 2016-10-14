@@ -24,18 +24,18 @@ jQuery(document).ready(function() {
 		}).on('mouseleave', 'li', function() {
 			$(this).removeClass('hover').children('ul').stop(true, true).fadeOut(50);
 		});
-		
+
 	})();
-	
+
 	/* Responsive Menu */
 	domready(function(){
-			
+
 		selectnav('nav', {
 			label: 'Menu',
 			nested: true,
 			indent: '-'
 		});
-				
+
 	});
 
 /*----------------------------------------------------*/
@@ -76,11 +76,11 @@ jQuery(document).ready(function() {
 				jQuery("#backtotop").fadeOut(fadeOutTime);
 			}
 		});
-		 
+
 		jQuery('#backtotop a').click(function(){
-			jQuery('html, body').animate({scrollTop:0}, scrollSpeed); 
-			return false; 
-		}); 
+			jQuery('html, body').animate({scrollTop:0}, scrollSpeed);
+			return false;
+		});
 	})();
 
 /*----------------------------------------------------*/
@@ -92,9 +92,9 @@ var animateSpeed=300;
 var emailReg = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+\.)+[a-zA-Z0-9.-]{2,4}$/;
 
 	// Validating
-	
+
 	function validateName(name) {
-		if (name.val()=='*') {name.addClass('validation-error',animateSpeed); return false;}
+		if (name.val()=='') {name.addClass('validation-error',animateSpeed); return false;}
 		else {name.removeClass('validation-error',animateSpeed); return true;}
 	}
 
@@ -102,82 +102,78 @@ var emailReg = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+\.)+[a-zA-Z0-9.-]{2,4}$/;
 		if (!regex.test(email.val())) {email.addClass('validation-error',animateSpeed); return false;}
 		else {email.removeClass('validation-error',animateSpeed); return true;}
 	}
-		
+
 	function validateMessage(message) {
 		if (message.val()=='') {message.addClass('validation-error',animateSpeed); return false;}
 		else {message.removeClass('validation-error',animateSpeed); return true;}
 	}
-                
+
 	$('#send').click(function() {
-	
+
 		var result=true;
-		
+
 		var name = $('input[name=name]');
 		var email = $('input[name=email]');
 		var message = $('textarea[name=message]');
-                
+
 		// Validate
 		if(!validateName(name)) result=false;
 		if(!validateEmail(email,emailReg)) result=false;
 		if(!validateMessage(message)) result=false;
-		
+
 		if(result==false) return false;
-				
+
 		// Data
 		var data = 'name=' + name.val() + '&email=' + email.val() + '&message='  + encodeURIComponent(message.val());
-		
+
 		// Disable fields
 		$('.text').attr('disabled','true');
-		
+
 		// Loading icon
 		$('.loading').show();
-		
+
 		// Start jQuery
 		$.ajax({
-		
+
 			// PHP file that processes the data and send mail
-			url: "contact.php",	
-			
+			url: "contact.php",
+
 			// GET method is used
 			type: "GET",
 
-			// Pass the data			
-			data: data,		
-			
+			// Pass the data
+			data: data,
+
 			//Do not cache the page
 			cache: false,
-			
-			// Success
-			success: function (html) {				
-			
-				if (html==1) {	
 
+			// Success
+			success: function (html) {
+				if (html==1) {
 					// Loading icon
-					$('.loading').fadeOut('slow');	
-						
+					$('.loading').fadeOut('slow');
+
 					//show the success message
 					$('.success-message').slideDown('slow');
-											
+
 					// Disable send button
 					$('#send').attr('disabled',true);
-					
 				}
-				
 				else {
-					$('.loading').fadeOut('slow')
-					alert('Sorry, unexpected error. Please try again later.');				
+					$('.loading').fadeOut('slow');
+					alert('Sorry, unexpected error. Please try again later.');
 				}
-			}		
+			}
 		});
-	
+
 		return false;
-		
+
 	});
-		
+
 	$('input[name=name]').blur(function(){validateName($(this));});
 	$('input[name=email]').blur(function(){validateEmail($(this),emailReg); });
 	$('textarea[name=message]').blur(function(){validateMessage($(this)); });
-       
+
 })();
 
 /* End Document */

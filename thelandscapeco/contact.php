@@ -19,8 +19,7 @@ if (!$message) $errors[count($errors)] = 'Please enter your message.';
 if (!$errors) {
 
 	// ====== Your mail here  ====== //
-	//$to = 'Your Name <david@thelandscapeco.com.au>';
-	$to = 'Your Name <m1ron.com@gmail.com>';
+	$to = 'Your Name <david@thelandscapeco.com.au>';
 	//sender
 	$from = $name . ' <' . $email . '>';
 	
