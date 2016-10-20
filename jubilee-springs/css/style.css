@@ -749,7 +749,8 @@ label.error {
     font-size: 14px;
     font-weight: 600;
     border: none;
-    margin: 8px 0 0 0;
+    margin: 15px 0 0 20px;
+    float: right;
     text-transform: uppercase;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -762,6 +763,9 @@ label.error {
 #contact_form .form-btn:hover {
     background: #323232;
     color: #fff;
+}
+#contact_form .form-submit {
+    margin: 10px 0;
 }
 .form_thanks {
     text-align: center;

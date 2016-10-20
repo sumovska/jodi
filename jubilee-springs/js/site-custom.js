@@ -289,6 +289,7 @@ $(document).ready(function () {
     // Contact Form
     jQuery("#contact_form").validate({
         meta: "validate",
+        ignore: ".ignore",
         submitHandler: function (form) {
             var s_name = $("#name").val();
             var s_email = $("#email").val();
@@ -306,10 +307,8 @@ $(document).ready(function () {
             $('#contact_form').hide();
             return false;
         },
-        /* */
         rules: {
             name: "required",
-
             lastname: "required",
             // simple rule, converted to {required:true}
             email: { // compound rule
@@ -317,13 +316,23 @@ $(document).ready(function () {
                 email: true
             },
             phone: {
-                required: true,
+                required: true
             },
             comment: {
                 required: true
             },
             subject: {
                 required: true
+            },
+            hiddenRecaptcha: {
+                required: function() {
+                    console.log(grecaptcha.getResponse());
+                    if(grecaptcha.getResponse() == '') {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
             }
         },
         messages: {
@@ -335,7 +344,8 @@ $(document).ready(function () {
             },
             phone: "Please enter a phone.",
             subject: "Please enter a subject.",
-            comment: "Please enter a comment."
+            comment: "Please enter a comment.",
+            hiddenRecaptcha: "Please check a captcha."
         }
     });
     /*========================================*/
@@ -425,12 +435,12 @@ $(document).ready(function () {
     });
 
     /*
-    $('.search-form').each(function () {
-        var form = $(this), input = $('input', form);
-        form.on('submit', function () {
-            return (input.val().trim().length > 0);
-        });
-    });
-    */
+     $('.search-form').each(function () {
+     var form = $(this), input = $('input', form);
+     form.on('submit', function () {
+     return (input.val().trim().length > 0);
+     });
+     });
+     */
 
 });
