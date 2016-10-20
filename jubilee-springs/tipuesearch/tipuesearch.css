@@ -10,7 +10,6 @@ http://www.tipue.com/search
     padding: 15px 50px;
     margin: 20px auto 50px;
     background: url('../images/loader.gif') no-repeat 50% 50%;
-    background-size: 92px 92px;
 }
 #tipue_search_content.loaded {
     background: none;

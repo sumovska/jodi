@@ -424,11 +424,13 @@ $(document).ready(function () {
         shadow: 0
     });
 
+    /*
     $('.search-form').each(function () {
         var form = $(this), input = $('input', form);
         form.on('submit', function () {
             return (input.val().trim().length > 0);
         });
     });
+    */
 
 });
