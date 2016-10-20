@@ -24,6 +24,7 @@
 	<!--  Base Stylesheet  -->
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" class="alt" href="css/theme/default.css">
+	<link rel="stylesheet" class="alt" href="tipuesearch/tipuesearch.css">
 
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<script type="text/javascript">
@@ -63,14 +64,14 @@
 							<li><a href="https://www.facebook.com/Jubilee-Spring-Co-1688029264808723/" id="trigger-overlay" target="_blank"><i class="fa fa-facebook"></i>&nbsp; Jubilee Springs</a></li>
 						</ul>
 					</div>
-					<div class="col-sm-4 text-right">
-						<form class="search-form" action="search.php" action="put">
+					<!-- div class="col-sm-4 text-right">
+						<form class="search-form" action="search.html">
 							<label>
-								<input type="text" name="q" value="" placeholder="Search&hellip;" maxlength="50">
+								<input type="text" name="q" value="" placeholder="Search&hellip;" maxlength="50" id="tipue_search_input" autocomplete="off" required>
 								<i class="fa fa-search" aria-hidden="true"></i>
 							</label>
 						</form>
-					</div>
+					</div-->
 				</div>
 			</div>
 		</div><!--  Top Bar  -->
@@ -81,8 +82,8 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<div id="main-menu" class="menuzord"><h1>
-								<a href="index.html" class="menuzord-brand alternate" title="Custom Made Springs Design Australia: Spring Manufacturers/Industrial Springs Sydney/Melbourne/Brisbane/Adelaide/Australia"><img src="images/logo.jpg" alt="Spring Manufacturers/Industrial Springs Suppliers Australia"> Jubilee Springs</a>
-							</h1>
+							<a href="index.html" class="menuzord-brand alternate" title="Custom Made Springs Design Australia: Spring Manufacturers/Industrial Springs Sydney/Melbourne/Brisbane/Adelaide/Australia"><img src="images/logo.jpg" alt="Spring Manufacturers/Industrial Springs Suppliers Australia"> Jubilee Springs</a>
+						</h1>
 							<ul class="menuzord-menu">
 								<li><a href="index.html" title="Custom Made Springs Design Australia"><span>Home</span></a></li>
 								<li><a href="spring-manufacturers-industrial-springs-suppliers-australia.html" title="Spring Manufacturers/Industrial Springs Australia"><span>About</span></a></li>
@@ -124,8 +125,8 @@
 	<!-- xxx Breadcrumns Wrap xxx -->
 	<section class="breadcrumb-wrap">
 		<div class="container">
-			<h1>Search for ''</h1>
-			<small><a href="#">Home</a> / Search Results</small>
+			<h1>Search Results</h1>
+			<small><a href="#">Home</a> / Search</small>
 		</div>
 	</section><!-- xxx Breadcrumns Wrap End xxx -->
 
@@ -135,7 +136,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-
+					<form class="search-form" action="search.html">
+						<label>
+							<input type="text" name="q" value="" placeholder="Search&hellip;" maxlength="50" id="tipue_search_input" autocomplete="off" required>
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</label>
+					</form>
+					<div id="tipue_search_content"></div>
 				</div>
 			</div>
 		</div><!--  Contact Us End  -->
@@ -208,6 +215,22 @@
 	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
 	<script type='text/javascript' src="js/site-custom.js"></script>
+
+	<script type="text/javascript" src="tipuesearch/tipuesearch_set.js"></script>
+	<script type="text/javascript" src="tipuesearch/tipuesearch.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#tipue_search_input').tipuesearch({
+				'mode': 'live',
+				'liveContent': '[data-search="true"]',
+				'liveDescription': '[data-search="true"]',
+				'liveTitle': '[data-title="true"]',
+				'minimumLength': 2,
+				'descriptiveWords': 40,
+				'highlightEveryTerm': true
+			});
+		});
+	</script>
 
 
 </body>
