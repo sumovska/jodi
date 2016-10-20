@@ -131,15 +131,14 @@
 
 	<!--  Body Content  -->
 	<div id="body-content" class="no-margin">
-
+		<!--  Contact Us  -->
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
 
 				</div>
 			</div>
-		</div>
-
+		</div><!--  Contact Us End  -->
 	</div>
 
 	<section class="copyright">

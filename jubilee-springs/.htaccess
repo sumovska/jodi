@@ -1,0 +1,21 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^jubilee-springs\.com\.au [NC]
+RewriteRule (.*) http://www.jubilee-springs.com.au/$1 [L,R=301]
+RewriteEngine on
+
+ Options +FollowSymlinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^jubileesprings.com.au [NC]
+RewriteRule ^(.*)$ http://www.jubilee-springs.com.au/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www.jubileesprings.com.au [NC]
+RewriteRule ^(.*)$ http://www.jubilee-springs.com.au/$1 [L,R=301]
+
+Redirect 301 /compression-springs.html http://www.jubilee-springs.com.au/compression-springs-sydney-melbourne-brisbane-adelaide-australia.html
+Redirect 301 /torsion-spring.html http://www.jubilee-springs.com.au/torsion-spring-sydney-melbourne-brisbane-adelaide-australia.html
+Redirect 301 tension-springs.html http://www.jubilee-springs.com.au/tension-springs-sydney-melbourne-brisbane-adelaide-australia.html
+Redirect 301 /wire-shape.html http://www.jubilee-springs.com.au/wire-strip-form-flat-springs-sydney-melbourne-brisbane-adelaide-australia.html
+Redirect 301 /austrap.html http://www.jubilee-springs.com.au/austrap-mouse-trap-springs-sydney-melbourne-brisbane-adelaide-australia.html
+Redirect 301 /other-springs.html http://www.jubilee-springs.com.au/wave-die-constant-force-hot-coil-trace-springs-australia.html
+Redirect 301 /about.html http://www.jubilee-springs.com.au/spring-manufacturers-industrial-springs-suppliers-australia.html
+Redirect 301 /products.html http://www.jubilee-springs.com.au/spring-design-supply-sydney-melbourne-brisbane-adelaide-australia.html

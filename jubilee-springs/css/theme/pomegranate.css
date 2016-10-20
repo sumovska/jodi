@@ -1,0 +1,12 @@
+/* Text Theme Color */
+a, h2, h1, .blockquote-2:before, .blockquote-3:before, .blockquote-1:before, .blockquote-1 footer cite, .blockquote-2 footer cite, .blockquote-3 footer cite, .list-colored li i, .social-icons ul li a:hover, .menuzord-menu > li.active > a, .menuzord-menu > li:hover > a, .menuzord-menu ul.dropdown li:hover > a, .main-head h1 span, .portfolio_zoom a:hover, .portfolio_link a:hover, .icon-text h4, .footer-links li a:hover, .breadcrumb-wrap a, .menuzord-menu > li > .megamenu ul li a:hover, .icon-medium, .service-img h3, .theme-tab .nav-tabs > li.active > a, .theme-tab .nav-tabs > li.active > a:hover, .theme-tab .nav-tabs > li.active > a:focus, .team-wrap h3, .counter, .pricing, .search-box input, .btn-border-round:hover, .fontawesome-icons ul li i, .comment-thumb h5, .btn-border-round.white:hover{color:#F02311;}
+.btn-square:hover{color:#F02311 !important;}
+
+/* Background Theme Color */
+header, #back-top a, .menuzord-menu > li.active > a:before, .menuzord-menu > li:hover > a:before, .icon-big i, .portfolio_zoom, .portfolio_link, .port-btn:hover, .theme-accordian .panel-default > .panel-heading, .meta, .callout-2, .dropcap2, .skillbar-bar, .theme-tab .nav > li > a:hover, .clients-wrap, .owl-nav .owl-prev:hover, .owl-nav .owl-next:hover, .head.trending, .video-icon-wrap, #contact_form .form-btn, .btn-round, .btn-border-round.dark:hover, .alert-theme, .cbp-l-filters-button .cbp-filter-item.cbp-filter-item-active, .cbp-l-filters-button .cbp-filter-item:hover, .link-post, .share-this .social-icons ul li a:hover, .reply-btn a, #pageloader{background-color:#F02311;}
+
+/* Border Theme Color */
+.theme-tab .nav > li > a:hover, .btn-border-round:hover, .btn-border-round.dark:hover, .cbp-l-filters-button .cbp-filter-item.cbp-filter-item-active, .cbp-l-filters-button .cbp-filter-item:hover{border-color:#F02311;}
+.blockquote-3{border-left:5px solid #F02311;}
+.menuzord-menu ul.dropdown, .menuzord-menu ul.dropdown li ul.dropdown, .menuzord-menu > li > .megamenu, #boxed-wrapper{border-top:2px solid #F02311;}
+.owl-controls .owl-dot.active span, .owl-controls.clickable .owl-dot:hover span, .owl-controls .owl-dot:hover span{border:2px solid #F02311;}
